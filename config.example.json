@@ -1,0 +1,10 @@
+{
+  "listen_host": "127.0.0.1",
+  "port": 8004,
+  "python": ".venv/Scripts/python.exe",
+  "sd_scripts": "sd-scripts",
+  "base_model": "C:/path/to/moss_image_base_int8_convrot.safetensors",
+  "text_encoder": "C:/path/to/qwen3.5_9b_int8_convrot.safetensors",
+  "vae": "C:/path/to/flux2-vae_small.safetensors",
+  "output_dir": "C:/path/to/ComfyUI/models/loras/MOSS-Image"
+}

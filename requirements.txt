@@ -1,0 +1,12 @@
+accelerate
+bitsandbytes
+huggingface-hub
+numpy
+onnxruntime
+pandas
+Pillow
+psutil
+safetensors
+toml
+transformers
+triton-windows==3.8.0.post29

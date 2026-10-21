@@ -1,0 +1,11 @@
+.venv/
+runtime/
+configs/
+smoke-data/
+sd-scripts/
+config.json
+README_*.local.md
+__pycache__/
+*.pyc
+*.npz
+output/
