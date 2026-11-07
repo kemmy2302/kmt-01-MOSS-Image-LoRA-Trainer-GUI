@@ -1,5 +1,6 @@
 @echo off
 setlocal
+chcp 65001 >nul
 cd /d "%~dp0"
 if not exist "config.json" (
   copy /y "config.example.json" "config.json" >nul

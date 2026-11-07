@@ -2,12 +2,15 @@
 
 ## PythonまたはGitが見つからない
 
-64-bit版Python 3.10とGit for Windowsをインストールし、Windowsへ再ログインします。次の2つが成功することを確認してください。
+64-bit版Python 3.10とGit for Windowsをインストールし、Windowsへ再ログインします。Python Launcherを使う場合は`py -3.10`、PATH経由の場合は`python`のどちらかが3.10を返せばセットアップできます。
 
 ```bat
 py -3.10 --version
+python --version
 git --version
 ```
+
+Pythonが入っているのに見つからない場合は、`where python`で実体を確認してください。Microsoft Storeのエイリアスだけが表示される場合は、Python 3.10をPATHへ追加するかPython Launcherを有効にします。
 
 ## セットアップ途中で止まる
 
@@ -18,6 +21,8 @@ git --version
 ## GUIが開かない
 
 `start_gui.cmd`の画面に表示されたエラーを確認します。ポート8004が使用中なら、`config.json`の`port`を変更します。
+
+初期版で`C:\path`へのアクセス拒否が出る場合は、`config.json`の`output_dir`を`output`または書込み可能な実在フォルダへ変更してください。最新版では初期値が`output`になっています。
 
 ## モデルが見つからない
 

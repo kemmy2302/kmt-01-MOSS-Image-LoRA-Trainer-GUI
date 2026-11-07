@@ -24,7 +24,8 @@ MOSS-ImageのLoRAをWindows上で作成するためのブラウザ操作型GUI�
 - NVIDIA GPU（VRAM 12GBを基準、RTX 4070 12GBで検証）
 - NVIDIAドライバー
 - [Python 3.10（64-bit）](https://www.python.org/downloads/release/python-31011/)
-  - インストール時に`Add Python to PATH`とPython Launcherを有効にしてください。
+  - Python Launcherの`py -3.10`、またはPATH上の`python`のどちらでも検出します。
+  - 既存の`.venv`を別PCからコピーせず、各PCで`setup_windows.cmd`を実行してください。
 - [Git for Windows](https://git-scm.com/download/win)
 - RAM、ページファイル、モデル・キャッシュ用の十分な空き容量
 
@@ -54,6 +55,8 @@ VRAM 8GB以下、AMD／Intel GPU、Linux、macOSは未検証・サポート対�
 5. `http://127.0.0.1:8004`を開きます。
 
 初回はPyTorchなどのパッケージと`sd-scripts`をダウンロードするため時間がかかります。ComfyUIのPython環境は変更せず、このツール専用の`.venv`を使います。
+
+初期`config.json`の`output_dir`はリポジトリ内の`output`です。そのためモデルパスをまだ設定していなくてもGUI自体は起動でき、画面上で不足モデルを確認できます。学習前にモデル3点のパスを実在するファイルへ変更してください。
 
 ### `config.json`の例
 

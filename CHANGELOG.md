@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 - 2026-11-07
+
+- Detect 64-bit Python 3.10 from either the Python Launcher or `python` on PATH.
+- Install `sd-scripts` requirements from the correct working directory.
+- Use the repository-local `output` folder as the safe default output directory.
+- Improve Windows console encoding and troubleshooting guidance.
+
 ## 0.1.0 - 2026-10-21
 
 - Initial public release for Windows and NVIDIA GPUs.
